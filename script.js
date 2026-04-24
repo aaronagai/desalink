@@ -42,12 +42,10 @@
   style.textContent = `
     .panel__overlay, .steps__card, .order__plan, .support__card {
       opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.9s cubic-bezier(0.4,0,0.2,1), transform 0.9s cubic-bezier(0.4,0,0.2,1);
+      translate: 0 24px;
+      transition: opacity 0.9s cubic-bezier(0.4,0,0.2,1), translate 0.9s cubic-bezier(0.4,0,0.2,1);
     }
-    .panel__overlay--center { transform: translate(-50%, calc(-50% + 24px)); }
-    .revealed { opacity: 1 !important; transform: translateY(0) !important; }
-    .panel__overlay--center.revealed { transform: translate(-50%, -50%) !important; }
+    .revealed { opacity: 1 !important; translate: 0 0 !important; }
     .steps__card:nth-child(2) { transition-delay: 0.12s; }
     .steps__card:nth-child(3) { transition-delay: 0.24s; }
     .order__plan:nth-child(2) { transition-delay: 0.1s; }

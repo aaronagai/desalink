@@ -184,41 +184,41 @@ img { display: block; max-width: 100%; }
 .panel {
   position: relative;
   width: 100%;
-  height: 100vh;
-  min-height: 640px;
+  min-height: 100vh;
+  display: flex;
+  padding: 18vh 8% 12vh;
   background: var(--panel);
   overflow: hidden;
 }
 
-/* Subtle alternating tones so stacked black panels read as separate */
 .panel:nth-of-type(even) { background: var(--panel-alt); }
 .panel--hero { background: var(--black); }
 .panel--spacex { background: #0c0c0c; }
 
 .panel__overlay {
-  position: absolute;
-  padding: 0 24px;
-  max-width: 520px;
   width: 100%;
+  max-width: 520px;
+  text-align: left;
 }
 
-/* Positioning variants */
 .panel__overlay--top-right {
-  top: 22%;
-  right: 8%;
-  text-align: left;
+  margin-left: auto;
+  margin-right: 0;
 }
 .panel__overlay--top-left {
-  top: 22%;
-  left: 8%;
-  text-align: left;
+  margin-left: 0;
+  margin-right: auto;
 }
 .panel__overlay--center {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
   max-width: 760px;
+  margin: auto;
+  text-align: center;
+}
+
+.panel--hero {
+  align-items: center;
+  justify-content: center;
+  padding: 0 24px;
 }
 
 .panel__title {
@@ -603,13 +603,9 @@ img { display: block; max-width: 100%; }
    RESPONSIVE
    ============================================================ */
 @media (max-width: 1024px) {
-  .panel__overlay--top-right,
-  .panel__overlay--top-left {
-    top: 18%;
-    left: 24px;
-    right: 24px;
-    max-width: none;
-  }
+  .panel { padding: 16vh 6% 10vh; }
+  .panel__overlay { max-width: 560px; }
+
   .steps__grid,
   .order__plans,
   .support__grid { grid-template-columns: 1fr; }
@@ -622,24 +618,12 @@ img { display: block; max-width: 100%; }
   .nav__links { display: none; }
   .nav { padding: 0 20px; }
 
-  .panel { min-height: 560px; height: auto; padding: 120px 0; }
+  .panel { padding: 120px 24px 80px; min-height: 520px; }
   .panel__overlay--top-right,
-  .panel__overlay--top-left,
-  .panel__overlay--center {
-    position: relative;
-    top: auto; left: auto; right: auto;
-    transform: none;
-    padding: 0 24px;
-    margin: 0 auto;
-  }
+  .panel__overlay--top-left { margin: 0; max-width: none; }
   .panel__overlay--center { max-width: 560px; }
 
-  .panel--hero { padding: 0; min-height: 100vh; height: 100vh; }
-  .panel--hero .panel__overlay--center {
-    position: absolute;
-    top: 50%; left: 50%;
-    transform: translate(-50%, -50%);
-  }
+  .panel--hero { padding: 0 24px; min-height: 100vh; }
 
   .steps,
   .order,
