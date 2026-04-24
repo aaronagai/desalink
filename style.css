@@ -455,6 +455,32 @@ img { display: block; max-width: 100%; }
   line-height: 1.7;
 }
 
+/* ---------- SPACEX ---------- */
+.spacex {
+  background: #2a2a2a;
+  padding: 120px 64px;
+}
+
+.spacex__content {
+  max-width: 520px;
+}
+
+.spacex__title {
+  font-size: clamp(28px, 4vw, 48px);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  margin-bottom: 24px;
+  line-height: 1.1;
+}
+
+.spacex__body {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--text-dim);
+  line-height: 1.75;
+  margin-bottom: 36px;
+}
+
 /* ---------- BAND ---------- */
 .band--dark {
   background: var(--dark2);
