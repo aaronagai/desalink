@@ -35,8 +35,25 @@
 // ---------- SCROLL REVEAL ----------
 (function () {
   const targets = document.querySelectorAll(
-    '.split__content, .steps__card, .order__plan, .support__card, .speedband__item'
+    '.panel__overlay, .steps__card, .order__plan, .support__card'
   );
+
+  const style = document.createElement('style');
+  style.textContent = `
+    .panel__overlay, .steps__card, .order__plan, .support__card {
+      opacity: 0;
+      transform: translateY(24px);
+      transition: opacity 0.9s cubic-bezier(0.4,0,0.2,1), transform 0.9s cubic-bezier(0.4,0,0.2,1);
+    }
+    .panel__overlay--center { transform: translate(-50%, calc(-50% + 24px)); }
+    .revealed { opacity: 1 !important; transform: translateY(0) !important; }
+    .panel__overlay--center.revealed { transform: translate(-50%, -50%) !important; }
+    .steps__card:nth-child(2) { transition-delay: 0.12s; }
+    .steps__card:nth-child(3) { transition-delay: 0.24s; }
+    .order__plan:nth-child(2) { transition-delay: 0.1s; }
+    .order__plan:nth-child(3) { transition-delay: 0.2s; }
+  `;
+  document.head.appendChild(style);
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -47,30 +64,15 @@
         }
       });
     },
-    { threshold: 0.12 }
+    { threshold: 0.15 }
   );
-
-  const style = document.createElement('style');
-  style.textContent = `
-    .split__content, .steps__card, .order__plan, .support__card, .speedband__item {
-      opacity: 0;
-      transform: translateY(28px);
-      transition: opacity 0.7s cubic-bezier(0.4,0,0.2,1), transform 0.7s cubic-bezier(0.4,0,0.2,1);
-    }
-    .revealed { opacity: 1 !important; transform: translateY(0) !important; }
-    .steps__card:nth-child(2) { transition-delay: 0.12s; }
-    .steps__card:nth-child(3) { transition-delay: 0.24s; }
-    .order__plan:nth-child(2) { transition-delay: 0.1s; }
-    .order__plan:nth-child(3) { transition-delay: 0.2s; }
-  `;
-  document.head.appendChild(style);
 
   targets.forEach((el) => observer.observe(el));
 })();
 
 // ---------- AVAILABILITY CHECK (STUB) ----------
 (function () {
-  document.querySelectorAll('.hero__form, .order__form').forEach((form) => {
+  document.querySelectorAll('.order__form').forEach((form) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const input = form.querySelector('input');

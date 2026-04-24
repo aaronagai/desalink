@@ -13,12 +13,13 @@
 
   <!-- ====== NAVIGATION ====== -->
   <nav class="nav" id="navbar">
-    <div class="nav__logo">
-      <a href="#"><img src="desalinklogo.svg" alt="Desalink" class="nav__logo-img" /></a>
-    </div>
-
-    <div class="nav__actions">
-      <a href="#order" class="btn btn--outline">ORDER NOW</a>
+    <div class="nav__left">
+      <a href="#" class="nav__logo"><img src="desalinklogo.svg" alt="Desalink" class="nav__logo-img" /></a>
+      <div class="nav__links">
+        <a href="#residential">RESIDENTIAL</a>
+        <a href="#business">BUSINESS</a>
+        <a href="#community">COMMUNITY</a>
+      </div>
     </div>
     <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -31,106 +32,80 @@
     <a href="#business" class="mobile-menu__link">BUSINESS</a>
     <a href="#community" class="mobile-menu__link">COMMUNITY</a>
     <a href="#how-it-works" class="mobile-menu__link">HOW IT WORKS</a>
+    <a href="#order" class="mobile-menu__link">ORDER</a>
     <a href="#support" class="mobile-menu__link">SUPPORT</a>
-    <a href="#order" class="mobile-menu__link mobile-menu__cta">ORDER NOW</a>
   </div>
 
   <!-- ====== HERO ====== -->
-  <section class="hero" id="hero">
-    <div class="hero__content">
-      <h1 class="hero__title">High-Speed Internet for Rural Sarawak.</h1>
-      <p class="hero__subtitle">Fast, reliable satellite broadband — delivered directly to your village. No cables, no waiting.</p>
-      <div class="hero__form">
-        <input type="text" class="hero__input" placeholder="Enter your village or postcode" />
-        <button class="btn btn--primary">CHECK AVAILABILITY</button>
-      </div>
-      <a href="#residential" class="hero__scroll">
-        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
-      </a>
+  <section class="panel panel--hero" id="hero">
+    <div class="panel__overlay panel__overlay--center">
+      <h1 class="panel__title panel__title--hero">HIGH-SPEED INTERNET<br/>FOR RURAL SARAWAK</h1>
+      <p class="panel__body panel__body--hero">
+        Fast, reliable satellite broadband — delivered directly to your village.
+        No cables, no waiting. <a href="#order" class="link">Order now</a>.
+      </p>
     </div>
-  </section>
-
-  <!-- ====== SPEED BAND ====== -->
-  <section class="speedband">
-    <div class="speedband__item">
-      <span class="speedband__value">100–220</span>
-      <span class="speedband__label">Mbps Download</span>
-    </div>
-    <div class="speedband__divider"></div>
-    <div class="speedband__item">
-      <span class="speedband__value">&lt; 40ms</span>
-      <span class="speedband__label">Latency</span>
-    </div>
-    <div class="speedband__divider"></div>
-    <div class="speedband__item">
-      <span class="speedband__value">99%</span>
-      <span class="speedband__label">Uptime Target</span>
-    </div>
-    <div class="speedband__divider"></div>
-    <div class="speedband__item">
-      <span class="speedband__value">Sarawak</span>
-      <span class="speedband__label">Coverage Region</span>
-    </div>
+    <a href="#residential" class="panel__scroll" aria-label="Scroll down">
+      <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
+    </a>
   </section>
 
   <!-- ====== RESIDENTIAL ====== -->
-  <section class="split split--dark" id="residential">
-    <div class="split__media split__media--left">
-      <div class="split__image split__image--village"></div>
-    </div>
-    <div class="split__content split__content--right">
-      <span class="split__tag">RESIDENTIAL</span>
-      <h2 class="split__title">Internet that reaches every longhouse.</h2>
-      <p class="split__body">Whether you're deep in the Baram river basin or perched high in the Kelabit Highlands, Desalink brings fast, reliable broadband to your home — no fibre cables needed. Just point the dish at the sky and connect.</p>
-      <ul class="split__list">
-        <li>Speeds up to 220 Mbps</li>
-        <li>Video calls, streaming, and remote work — all supported</li>
-        <li>Self-install kit included</li>
-        <li>No long-term contract required</li>
-      </ul>
+  <section class="panel" id="residential">
+    <div class="panel__overlay panel__overlay--top-right">
+      <h2 class="panel__title">RESIDENTIAL</h2>
+      <p class="panel__body">
+        Internet that reaches every longhouse. Whether you're deep in the Baram river basin
+        or perched high in the Kelabit Highlands, Desalink delivers speeds up to
+        <strong>220 Mbps</strong> — no fibre cables needed. Self-install kit included,
+        no long-term contract required. Learn more <a href="#order" class="link">here</a>.
+      </p>
     </div>
   </section>
 
   <!-- ====== BUSINESS ====== -->
-  <section class="split split--light" id="business">
-    <div class="split__content split__content--left">
-      <span class="split__tag">BUSINESS</span>
-      <h2 class="split__title">Keep your business running, no matter where you are.</h2>
-      <p class="split__body">From logging camps and palm oil estates to eco-lodges and rural clinics — Desalink Business provides enterprise-grade connectivity for operations that can't afford downtime. Guaranteed priority bandwidth, even during peak hours.</p>
-      <ul class="split__list">
-        <li>Priority bandwidth allocation</li>
-        <li>Dedicated account support</li>
-        <li>Multiple device connections</li>
-        <li>Suitable for POS, VoIP, and video conferencing</li>
-      </ul>
-    </div>
-    <div class="split__media split__media--right">
-      <div class="split__image split__image--business"></div>
+  <section class="panel" id="business">
+    <div class="panel__overlay panel__overlay--top-left">
+      <h2 class="panel__title">BUSINESS</h2>
+      <p class="panel__body">
+        Keep your business running, no matter where you are. From logging camps and palm oil
+        estates to eco-lodges and rural clinics, Desalink Business provides
+        <strong>priority bandwidth</strong> and dedicated support — built for operations that
+        can't afford downtime. Learn more <a href="#order" class="link">here</a>.
+      </p>
     </div>
   </section>
 
   <!-- ====== COMMUNITY ====== -->
-  <section class="split split--dark" id="community">
-    <div class="split__media split__media--left">
-      <div class="split__image split__image--community"></div>
+  <section class="panel" id="community">
+    <div class="panel__overlay panel__overlay--top-right">
+      <h2 class="panel__title">COMMUNITY</h2>
+      <p class="panel__body">
+        Connect an entire village with one dish. Purpose-built for village headmen, community
+        halls, and rural schools — a single Desalink installation can power a shared Wi-Fi
+        hotspot for <strong>up to 50 devices</strong>, with subsidised rates for schools and
+        health clinics. Learn more <a href="#order" class="link">here</a>.
+      </p>
     </div>
-    <div class="split__content split__content--right">
-      <span class="split__tag">COMMUNITY</span>
-      <h2 class="split__title">Connect an entire village with one dish.</h2>
-      <p class="split__body">Our Community plan is purpose-built for village headmen, community halls, and rural schools. A single Desalink installation can power a shared Wi-Fi hotspot that serves dozens of households — at a fraction of individual plan costs.</p>
-      <ul class="split__list">
-        <li>Designed for longhouse &amp; kampung deployments</li>
-        <li>Managed hotspot solution available</li>
-        <li>Subsidised rates for schools &amp; health clinics</li>
-        <li>Desalink field technician on-site setup</li>
-      </ul>
+  </section>
+
+  <!-- ====== RELIABLE & RESILIENT ====== -->
+  <section class="panel" id="reliable">
+    <div class="panel__overlay panel__overlay--top-right">
+      <h2 class="panel__title">RELIABLE &amp; RESILIENT</h2>
+      <p class="panel__body">
+        Starlink provides high-speed, low-latency internet with more than
+        <strong>99% average uptime</strong> and reliable connectivity across rural Sarawak.
+        Designed to endure the elements — Starlink kits can withstand heavy rain, heat, and
+        harsh winds. Learn more <a href="#how-it-works" class="link">here</a>.
+      </p>
     </div>
   </section>
 
   <!-- ====== HOW IT WORKS ====== -->
   <section class="steps" id="how-it-works">
     <div class="steps__header">
-      <span class="steps__tag">HOW IT WORKS</span>
+      <span class="eyebrow">HOW IT WORKS</span>
       <h2 class="steps__title">We handle everything, start to finish.</h2>
       <p class="steps__sub">As authorised Starlink installers and consultants, we take care of the entire process — from site assessment to going live.</p>
     </div>
@@ -138,7 +113,7 @@
       <div class="steps__card">
         <div class="steps__number">01</div>
         <h3 class="steps__card-title">Consultation</h3>
-        <p class="steps__card-body">Reach out to us and we'll assess your location, recommend the right Starlink plan for your needs, and walk you through everything — no technical knowledge required.</p>
+        <p class="steps__card-body">Reach out and we'll assess your location, recommend the right Starlink plan for your needs, and walk you through everything — no technical knowledge required.</p>
       </div>
       <div class="steps__card">
         <div class="steps__number">02</div>
@@ -154,31 +129,22 @@
   </section>
 
   <!-- ====== ENGINEERED BY SPACEX ====== -->
-  <section class="spacex">
-    <div class="spacex__content">
-      <h2 class="spacex__title">ENGINEERED BY SPACEX</h2>
-      <p class="spacex__body">As the world's leading provider of launch services — and the only provider with an orbital class reusable rocket — SpaceX has deep experience with both spacecraft and on-orbit operations.</p>
-      <a href="https://www.spacex.com" target="_blank" rel="noopener" class="btn btn--outline">LEARN MORE</a>
+  <section class="panel panel--spacex">
+    <div class="panel__overlay panel__overlay--top-left">
+      <h2 class="panel__title">ENGINEERED BY SPACEX</h2>
+      <p class="panel__body">
+        As the world's leading provider of launch services — and the only provider with an
+        orbital class reusable rocket — SpaceX has deep experience with both spacecraft and
+        on-orbit operations. Learn more
+        <a href="https://www.spacex.com" target="_blank" rel="noopener" class="link">here</a>.
+      </p>
     </div>
   </section>
 
-  <!-- ====== NO CONTRACT ====== -->
-  <section class="band band--dark">
-    <div class="band__inner">
-      <div class="band__icon">
-        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
-      </div>
-      <div class="band__text">
-        <h3 class="band__title">30-Day Trial</h3>
-        <p class="band__body">Try Starlink through Desalink for 30 days. If it's not right for you, we'll help you sort it out — no pressure, no hassle.</p>
-      </div>
-      <a href="#order" class="btn btn--outline">ORDER NOW</a>
-    </div>
-  </section>
-
-  <!-- ====== ORDER / CTA ====== -->
+  <!-- ====== ORDER / PLANS ====== -->
   <section class="order" id="order">
     <div class="order__inner">
+      <span class="eyebrow">ORDER</span>
       <h2 class="order__title">Ready to connect?</h2>
       <p class="order__sub">Check if Desalink is available in your area. Enter your village name, GPS coordinates, or postcode below.</p>
       <form class="order__form" onsubmit="return false;">
@@ -228,23 +194,20 @@
   <!-- ====== SUPPORT ====== -->
   <section class="support" id="support">
     <div class="support__inner">
-      <span class="support__tag">SUPPORT</span>
+      <span class="eyebrow">SUPPORT</span>
       <h2 class="support__title">We're here to help.</h2>
       <div class="support__grid">
         <div class="support__card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.8a19.79 19.79 0 01-3.07-8.63A2 2 0 012 0h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
           <h3>Call Us</h3>
           <p>+60 82-XXX-XXXX</p>
           <p class="support__hours">Mon–Fri, 8am–6pm MYT</p>
         </div>
         <div class="support__card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
           <h3>Email Us</h3>
           <p>hello@desalink.my</p>
           <p class="support__hours">Response within 24 hours</p>
         </div>
         <div class="support__card">
-          <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="#ffffff" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
           <h3>WhatsApp</h3>
           <p>+60 12-XXX-XXXX</p>
           <p class="support__hours">Available 7 days a week</p>
