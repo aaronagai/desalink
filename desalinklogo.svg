@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1024 1024">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: Decimal-Semibold, Decimal;
+        font-size: 93.05px;
+        font-weight: 600;
+      }
+
+      .cls-2 {
+        fill: url(#linear-gradient);
+      }
+
+      .cls-3 {
+        letter-spacing: .3em;
+      }
+
+      .cls-4 {
+        letter-spacing: .3em;
+      }
+
+      .cls-5 {
+        letter-spacing: .3em;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="495.4" y1="531.59" x2="567.33" y2="459.67" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset=".13" stop-color="#fff" stop-opacity=".99"/>
+      <stop offset=".26" stop-color="#fff" stop-opacity=".94"/>
+      <stop offset=".38" stop-color="#fff" stop-opacity=".87"/>
+      <stop offset=".5" stop-color="#fff" stop-opacity=".76"/>
+      <stop offset=".61" stop-color="#fff" stop-opacity=".63"/>
+      <stop offset=".72" stop-color="#fff" stop-opacity=".47"/>
+      <stop offset=".84" stop-color="#fff" stop-opacity=".27"/>
+      <stop offset=".95" stop-color="#fff" stop-opacity=".06"/>
+      <stop offset=".97" stop-color="#fff" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <path class="cls-2" d="M506.5,542.69c.96-4.93,7.17-34.4,33.61-48.38,9.17-4.85,18.02-6.38,24.48-6.8.36-10.37.73-20.74,1.09-31.1-8.3.9-18.62,3.45-28.52,9.98-34.91,23.05-30.92,73.58-30.66,76.3Z"/>
+  <text class="cls-1" transform="translate(84.43 539.02)"><tspan class="cls-4" x="0" y="0">DE</tspan><tspan class="cls-5" x="206.95" y="0">S</tspan><tspan class="cls-3" x="303.81" y="0" xml:space="preserve">A  LINK</tspan></text>
+</svg>
