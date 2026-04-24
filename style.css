@@ -107,7 +107,7 @@ img { display: block; max-width: 100%; }
   align-items: center;
 }
 .nav__logo-img {
-  height: 36px;
+  height: 56px;
   width: auto;
   display: block;
   transition: opacity 0.2s;
