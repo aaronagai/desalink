@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Desalink — High-Speed Internet for Rural Sarawak</title>
+  <title>Desalink: High-Speed Internet for Rural Sarawak</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -15,11 +15,6 @@
   <nav class="nav" id="navbar">
     <div class="nav__left">
       <a href="#" class="nav__logo"><img src="desalinklogo.svg" alt="Desalink" class="nav__logo-img" /></a>
-      <div class="nav__links">
-        <a href="#residential">RESIDENTIAL</a>
-        <a href="#business">BUSINESS</a>
-        <a href="#community">COMMUNITY</a>
-      </div>
     </div>
     <button class="nav__hamburger" id="hamburger" aria-label="Toggle menu">
       <span></span><span></span><span></span>
@@ -28,9 +23,9 @@
 
   <!-- Mobile Menu -->
   <div class="mobile-menu" id="mobileMenu">
-    <a href="#residential" class="mobile-menu__link">RESIDENTIAL</a>
-    <a href="#business" class="mobile-menu__link">BUSINESS</a>
-    <a href="#community" class="mobile-menu__link">COMMUNITY</a>
+    <a href="#reliable" class="mobile-menu__link">RELIABLE</a>
+    <a href="#fleet" class="mobile-menu__link">MONITORING</a>
+    <a href="#fast-deploy" class="mobile-menu__link">DEPLOYMENT</a>
     <a href="#how-it-works" class="mobile-menu__link">HOW IT WORKS</a>
     <a href="#order" class="mobile-menu__link">ORDER</a>
     <a href="#support" class="mobile-menu__link">SUPPORT</a>
@@ -41,63 +36,52 @@
     <div class="panel__overlay panel__overlay--center">
       <h1 class="panel__title panel__title--hero">HIGH-SPEED INTERNET<br/>FOR RURAL SARAWAK</h1>
       <p class="panel__body panel__body--hero">
-        Fast, reliable satellite broadband — delivered directly to your village.
-        No cables, no waiting. <a href="#order" class="link">Order now</a>.
+        The fastest, most reliable satellite broadband globally, delivered directly to the
+        rural heart of Sarawak. Stay connected with Starlink.&nbsp;<a href="#order" class="link">Order now</a>.
       </p>
     </div>
-    <a href="#residential" class="panel__scroll" aria-label="Scroll down">
+    <a href="#reliable" class="panel__scroll" aria-label="Scroll down">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"/></svg>
     </a>
   </section>
 
-  <!-- ====== RESIDENTIAL ====== -->
-  <section class="panel" id="residential">
-    <div class="panel__overlay panel__overlay--top-right">
-      <h2 class="panel__title">RESIDENTIAL</h2>
-      <p class="panel__body">
-        Internet that reaches every longhouse. Whether you're deep in the Baram river basin
-        or perched high in the Kelabit Highlands, Desalink delivers speeds up to
-        <strong>220 Mbps</strong> — no fibre cables needed. Self-install kit included,
-        no long-term contract required. Learn more <a href="#order" class="link">here</a>.
-      </p>
-    </div>
-  </section>
-
-  <!-- ====== BUSINESS ====== -->
-  <section class="panel" id="business">
-    <div class="panel__overlay panel__overlay--top-left">
-      <h2 class="panel__title">BUSINESS</h2>
-      <p class="panel__body">
-        Keep your business running, no matter where you are. From logging camps and palm oil
-        estates to eco-lodges and rural clinics, Desalink Business provides
-        <strong>priority bandwidth</strong> and dedicated support — built for operations that
-        can't afford downtime. Learn more <a href="#order" class="link">here</a>.
-      </p>
-    </div>
-  </section>
-
-  <!-- ====== COMMUNITY ====== -->
-  <section class="panel" id="community">
-    <div class="panel__overlay panel__overlay--top-right">
-      <h2 class="panel__title">COMMUNITY</h2>
-      <p class="panel__body">
-        Connect an entire village with one dish. Purpose-built for village headmen, community
-        halls, and rural schools — a single Desalink installation can power a shared Wi-Fi
-        hotspot for <strong>up to 50 devices</strong>, with subsidised rates for schools and
-        health clinics. Learn more <a href="#order" class="link">here</a>.
-      </p>
-    </div>
-  </section>
-
   <!-- ====== RELIABLE & RESILIENT ====== -->
   <section class="panel" id="reliable">
-    <div class="panel__overlay panel__overlay--top-right">
+    <div class="panel__overlay panel__overlay--top-left">
       <h2 class="panel__title">RELIABLE &amp; RESILIENT</h2>
       <p class="panel__body">
         Starlink provides high-speed, low-latency internet with more than
         <strong>99% average uptime</strong> and reliable connectivity across rural Sarawak.
-        Designed to endure the elements — Starlink kits can withstand heavy rain, heat, and
-        harsh winds. Learn more <a href="#how-it-works" class="link">here</a>.
+        Designed to endure the elements, Starlink kits can withstand heavy rain, heat, and
+        harsh winds.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====== MULTI-KAMPUNG DEPLOYMENT ====== -->
+  <section class="panel" id="fleet">
+    <div class="panel__overlay panel__overlay--top-right">
+      <h2 class="panel__title">A BIRD'S EYE VIEW</h2>
+      <p class="panel__body">
+        Deploy and manage Starlink across multiple villages without the overhead. The
+        <strong>Desalink Terminal</strong> provides real-time visibility into every
+        installation, tracking uptime, bandwidth, and hardware status across all sites from
+        a single interface. Consult us for multi-kampung rollouts.
+        <button type="button" class="link link--btn" id="demoOpen" aria-haspopup="dialog" aria-controls="demoModal">Click to Demo</button>.
+      </p>
+    </div>
+  </section>
+
+  <!-- ====== FAST DEPLOYMENT ====== -->
+  <section class="panel" id="fast-deploy">
+    <div class="panel__overlay panel__overlay--top-left">
+      <h2 class="panel__title">DEPLOYED FAST</h2>
+      <p class="panel__body">
+        Most on-site installations are completed within <strong>2–4 hours</strong>, with
+        typical installs finished in as little as <strong>4 hours</strong>. After you
+        confirm your order, our certified technicians can usually deploy within
+        <strong>24–48 hours</strong>. Complex multi-site rollouts are scheduled according to
+        project scope.
       </p>
     </div>
   </section>
@@ -107,23 +91,23 @@
     <div class="steps__header">
       <span class="eyebrow">HOW IT WORKS</span>
       <h2 class="steps__title">We handle everything, start to finish.</h2>
-      <p class="steps__sub">As authorised Starlink installers and consultants, we take care of the entire process — from site assessment to going live.</p>
+      <p class="steps__sub">As authorised Starlink installers and consultants, we take care of the entire process, from site assessment to going live.</p>
     </div>
     <div class="steps__grid">
       <div class="steps__card">
         <div class="steps__number">01</div>
         <h3 class="steps__card-title">Consultation</h3>
-        <p class="steps__card-body">Reach out and we'll assess your location, recommend the right Starlink plan for your needs, and walk you through everything — no technical knowledge required.</p>
+        <p class="steps__card-body">Reach out and we'll assess your location, recommend the right Starlink plan for your needs, and walk you through everything. No technical knowledge required.</p>
       </div>
       <div class="steps__card">
         <div class="steps__number">02</div>
         <h3 class="steps__card-title">Professional Installation</h3>
-        <p class="steps__card-body">Our certified technicians travel to your site — no matter how remote — and handle the full Starlink hardware setup, dish mounting, cabling, and network configuration.</p>
+        <p class="steps__card-body">Our certified technicians travel to your site, no matter how remote, and handle the full Starlink hardware setup, dish mounting, cabling, and network configuration.</p>
       </div>
       <div class="steps__card">
         <div class="steps__number">03</div>
         <h3 class="steps__card-title">Ongoing Support</h3>
-        <p class="steps__card-body">We don't disappear after installation. Desalink provides local after-sales support, troubleshooting, and plan management — something Starlink alone can't offer in rural Sarawak.</p>
+        <p class="steps__card-body">We don't disappear after installation. Desalink provides local after-sales support, troubleshooting, and plan management, something Starlink alone can't offer in rural Sarawak.</p>
       </div>
     </div>
   </section>
@@ -133,8 +117,8 @@
     <div class="panel__overlay panel__overlay--top-left">
       <h2 class="panel__title">ENGINEERED BY SPACEX</h2>
       <p class="panel__body">
-        As the world's leading provider of launch services — and the only provider with an
-        orbital class reusable rocket — SpaceX has deep experience with both spacecraft and
+        As the world's leading provider of launch services, and the only provider with an
+        orbital class reusable rocket, SpaceX has deep experience with both spacecraft and
         on-orbit operations. Learn more
         <a href="https://www.spacex.com" target="_blank" rel="noopener" class="link">here</a>.
       </p>
@@ -151,43 +135,6 @@
         <input type="text" class="order__input" placeholder="Village name or postcode (e.g. Long Lama, 98000)" />
         <button type="submit" class="btn btn--primary">CHECK AVAILABILITY</button>
       </form>
-      <div class="order__plans">
-        <div class="order__plan">
-          <h3 class="order__plan-name">Residential</h3>
-          <div class="order__plan-price">RM 299<span>/mo</span></div>
-          <ul class="order__plan-features">
-            <li>Up to 220 Mbps</li>
-            <li>Unlimited data</li>
-            <li>1 household</li>
-            <li>30-day guarantee</li>
-          </ul>
-          <a href="mailto:hello@desalink.my" class="btn btn--outline">ORDER</a>
-        </div>
-        <div class="order__plan order__plan--featured">
-          <span class="order__plan-badge">MOST POPULAR</span>
-          <h3 class="order__plan-name">Community</h3>
-          <div class="order__plan-price">RM 599<span>/mo</span></div>
-          <ul class="order__plan-features">
-            <li>Up to 220 Mbps shared</li>
-            <li>Unlimited data</li>
-            <li>Up to 50 devices</li>
-            <li>Managed hotspot</li>
-            <li>Subsidised for schools</li>
-          </ul>
-          <a href="mailto:hello@desalink.my" class="btn btn--primary">ORDER</a>
-        </div>
-        <div class="order__plan">
-          <h3 class="order__plan-name">Business</h3>
-          <div class="order__plan-price">RM 899<span>/mo</span></div>
-          <ul class="order__plan-features">
-            <li>Priority bandwidth</li>
-            <li>Unlimited data</li>
-            <li>Dedicated support</li>
-            <li>SLA guarantee</li>
-          </ul>
-          <a href="mailto:hello@desalink.my" class="btn btn--outline">ORDER</a>
-        </div>
-      </div>
     </div>
   </section>
 
@@ -199,7 +146,7 @@
       <div class="support__grid">
         <div class="support__card">
           <h3>Call Us</h3>
-          <p>+60 82-XXX-XXXX</p>
+          <p><a href="tel:+60128871906">+6012-887-1906</a></p>
           <p class="support__hours">Mon–Fri, 8am–6pm MYT</p>
         </div>
         <div class="support__card">
@@ -209,7 +156,7 @@
         </div>
         <div class="support__card">
           <h3>WhatsApp</h3>
-          <p>+60 12-XXX-XXXX</p>
+          <p><a href="https://wa.me/60128871906" target="_blank" rel="noopener">+6012-887-1906</a></p>
           <p class="support__hours">Available 7 days a week</p>
         </div>
       </div>
@@ -221,14 +168,14 @@
     <div class="footer__inner">
       <div class="footer__brand">
         <img src="desalinklogo.svg" alt="Desalink" class="footer__logo-img" />
-        <p class="footer__tagline">Authorised Starlink reseller &amp; service provider for rural Sarawak, Malaysia.</p>
+        <p class="footer__tagline">Satellite connectivity consulting &amp; deployment services across Sarawak, Malaysia.</p>
       </div>
       <div class="footer__links">
         <div class="footer__col">
           <h4>Services</h4>
-          <a href="#residential">Residential</a>
-          <a href="#business">Business</a>
-          <a href="#community">Community</a>
+          <a href="#reliable">Reliable &amp; resilient</a>
+          <a href="#fleet">Multi-site monitoring</a>
+          <a href="#fast-deploy">Fast deployment</a>
         </div>
         <div class="footer__col">
           <h4>Company</h4>
@@ -251,9 +198,26 @@
       </div>
     </div>
     <div class="footer__bottom">
-      <p>&copy; 2025 Desalink Sdn Bhd. All rights reserved. Starlink&reg; is a registered trademark of Space Exploration Technologies Corp.</p>
+      <p>&copy; 2026 Desa Digital Bridge Sdn Bhd. All rights reserved. Starlink&reg; is a registered trademark of Space Exploration Technologies Corp.</p>
     </div>
   </footer>
+
+  <!-- Demo modal (placeholder) -->
+  <div class="modal" id="demoModal" role="dialog" aria-modal="true" aria-labelledby="terminalTitle" hidden>
+    <div class="modal__backdrop" id="demoBackdrop" tabindex="-1"></div>
+    <div class="modal__box modal__box--terminal" role="document">
+      <div class="terminal" id="demoModalBody">
+        <div class="terminal__head">
+          <div class="terminal__head-left">
+            <span class="terminal__dots" aria-hidden="true"><i></i><i></i><i></i></span>
+            <span class="terminal__label" id="terminalTitle">Site status</span>
+          </div>
+          <button type="button" class="terminal__close" id="demoClose" aria-label="Close">&times;</button>
+        </div>
+        <div class="terminal__screen" id="terminalScreen" aria-live="polite"></div>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
