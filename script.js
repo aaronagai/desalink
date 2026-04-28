@@ -68,15 +68,22 @@
   targets.forEach((el) => observer.observe(el));
 })();
 
-// ---------- AVAILABILITY CHECK (STUB) ----------
+// ---------- AVAILABILITY CHECK (SEND WHATSAPP) ----------
 (function () {
+  const WHATSAPP_NUMBER = '60128871906';
+
   document.querySelectorAll('.order__form').forEach((form) => {
     form.addEventListener('submit', (e) => {
       e.preventDefault();
       const input = form.querySelector('input');
       const val = input.value.trim();
       if (!val) { input.focus(); return; }
-      alert(`Thanks! We'll check availability for "${val}" and get back to you via WhatsApp or email within 24 hours.`);
+
+      const message =
+        `Hello Desalink, I want to check availability for: ${val}`;
+      const url = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
+
+      window.open(url, '_blank', 'noopener,noreferrer');
       input.value = '';
     });
   });
