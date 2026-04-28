@@ -13,7 +13,7 @@
   --text-dim:   rgba(255,255,255,0.72);
   --text-muted: rgba(255,255,255,0.45);
   --border:     rgba(255,255,255,0.08);
-  --font:       'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  --font:       'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
   --nav-h:      64px;
   --max-w:      1200px;
   --ease:       cubic-bezier(0.4, 0, 0.2, 1);
