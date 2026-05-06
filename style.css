@@ -855,6 +855,15 @@ body.modal-open {
   margin-bottom: 10px;
 }
 
+.footer__company-name,
+.footer__company-reg {
+  display: block;
+}
+
+.footer__company-reg {
+  margin-top: 2px;
+}
+
 .footer__tagline {
   font-size: 13px;
   color: var(--text-muted);
